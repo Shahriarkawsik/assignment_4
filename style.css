@@ -1,0 +1,25 @@
+/* @import url(https://db.onlinewebfonts.com/c/5cae74f63bd48d24d5abdddb3af09a50?family=Airbnb+Cereal+App+Black); */
+@font-face {
+    font-family: 'airbnb_cereal_appblack';
+    src: url('airbnb_cereal_app_black-webfont.woff2') format('woff2'),
+         url('airbnb_cereal_app_black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: "Airbnb Cereal App Black";
+}
+:root{
+    --bottom-header-color:#000020;
+    --paragraph-color: #9090A7;
+    --primary-color:#060640;
+    --secondary-color:#00E5CC;
+}
