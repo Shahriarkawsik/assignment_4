@@ -10,6 +10,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    text-decoration: none;
 }
 html{
     font-size: 62.5%;
@@ -22,4 +23,67 @@ body{
     --paragraph-color: #9090A7;
     --primary-color:#060640;
     --secondary-color:#00E5CC;
+    --section-color: #ECF9FF;
+}
+.dis-flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+/* navBar design */
+nav{
+    /* background-color: var(--section-color); */
+    background-color: rebeccapurple;
+    height: 80vh;
+}
+.navBar{
+    align-items: center;
+    background-color: #fff;
+    border-radius: 1rem;
+    justify-content: space-between;
+    margin: 3.5rem 13.5rem;
+    padding: 1.5rem 0;
+}
+ul li{
+    list-style-type: none;
+}
+ul li a{
+    margin: 0.5rem;
+    padding: 1rem 0.5rem;
+
+}
+.navBar__left{
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 700;
+    padding: 0 3.5rem;
+}
+.navBar__left::first-letter{
+    color: #00E5CC;
+}
+.navBar__left:not(::first-letter){
+    color: var(--primary-color);
+}
+.navBar__mdl li a{
+    color: var(--paragraph-color);
+    transition: all 0.4s ease-out;
+}
+.navBar__mdl li:hover a{
+    border-bottom: 3px solid #00E5CC ;
+}
+.navBar__right li a{
+    color: var(--primary-color);
+}
+.navBar__mdl,.navBar__right{
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 500;
+}
+.navBar__right li a{
+    color: #060640;
+    border-radius: 8px;
+}
+.navBar__right li:hover a{
+    background-color: #060640;
+    color: #fff;
+    /* border-bottom: 3px solid #00E5CC ; */
 }
