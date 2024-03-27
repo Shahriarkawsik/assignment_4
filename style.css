@@ -45,11 +45,16 @@ body {
   font-weight: 500;
   padding: 0 3.5rem 0 3.6rem;
   cursor: pointer;
+  transition: all 0.5s ease;
 }
-img{
-    object-fit: cover;
-    background-size: cover;
-    background-repeat: no-repeat;
+.button:hover{
+  opacity: 0.8;
+  transform: scale(1.02);
+}
+img {
+  object-fit: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 section {
   padding: 11rem 13.5rem;
@@ -136,7 +141,6 @@ ul li a {
 .navBar__right li:hover a {
   background-color: #060640;
   color: #fff;
-  /* border-bottom: 3px solid #00E5CC ; */
 }
 /* ---------------- */
 .hero__left {
@@ -162,6 +166,7 @@ ul li a {
 .dis__flex-btn {
   height: 6rem;
 }
+
 .dis__flex-btn i {
   display: flex;
   justify-content: center;
@@ -202,6 +207,10 @@ ul li a {
   border-radius: 1.4rem;
   box-shadow: 0rem 0rem 0.07rem 0;
   padding: 3rem;
+  transition: all 0.5s ease;
+}
+.work-card:hover{
+  transform: scale(1.02);
 }
 .work-card img {
   width: 7rem;
@@ -291,9 +300,13 @@ ul li a {
   min-width: 100%;
   border-radius: 1.4rem;
   border: 1px solid #fff;
-  /* background-color: #fff; */
   padding: 1.6rem;
   box-shadow: 0px 10px 70px 0px rgba(2, 2, 38, 0.06);
+  transition: all 0.5s ease;
+}
+.service-card-info:hover{
+  opacity: 0.8;
+  transform: scale(1.01);
 }
 .serv-card-header {
   color: #000;
@@ -307,32 +320,143 @@ ul li a {
   border-radius: 8px;
 }
 .service-card-footer {
-    justify-content: space-between;
-    align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
-.serv-card-footer-left{
-    height: 10vh;
-    align-items: center;
-    
+.serv-card-footer-left {
+  height: 10vh;
+  align-items: center;
 }
 .serv-card-footer-left img {
-    background-color: #fff;
-    width: 4.7rem;
-    height: 4.7rem;
-    border-radius: 50%;
-    background: lightgray cover no-repeat;
-    object-fit: cover;
-    padding: 0.5rem;
-    margin: -8px;
+  background-color: #fff;
+  width: 4.7rem;
+  height: 4.7rem;
+  border-radius: 50%;
+  background: lightgray cover no-repeat;
+  object-fit: cover;
+  padding: 0.5rem;
+  margin: -8px;
 }
-.serv-card-footer-left p{
-    /* background-color: greenyellow; */
-    margin: 1.5rem;
+.serv-card-footer-left p {
+  margin: 1.5rem;
+}
+.serv-card-footer-right p {
+  color: var(--secondary-color);
+  font-size: 1.4rem;
+  font-weight: 500;
+  font-style: normal;
+}
+/* ------------------ */
+.newsletter-section {
+  display: flex;
+  background-color: #ecfdff;
+}
+.newsletter-left {
+  width: 70%;
+}
+.newsletter-left-header {
+  color: var(--primary-color);
+  font-size: 4.5rem;
+  font-style: normal;
+  font-weight: 700;
+}
+.newsletter-left-p {
+  font-size: 1.6rem;
+  margin: 4.1rem 0;
+}
+.subscribe-btn {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  border-radius: 0.6rem;
+}
+.subscribe-btn-p {
+  padding: 3.1rem 2rem;
+  font-size: 1.6rem;
+}
+.subscribe-button {
+  background-color: var(--primary-color);
+  padding: 3rem 4.2rem;
+  margin: 0.9rem;
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 500;
+  font-style: normal;
+  border-radius: 0.6rem;
+  transition: all 0.5s ease;
+}
+.subscribe-button:hover{
+  opacity: 0.8;
+}
+.newsletter-right {
+  width: 30%;
+}
+.newsletter-right img{
+  width: 100%;
+}
+/* --------------------- */
+footer {
+  background-color: var(--primary-color);
+  width: 100%;
+  padding: 13.5rem 8rem;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+}
+.footer-about-logo {
+  font-size: 5rem;
+  font-style: normal;
+  font-weight: 700;
+  color: #fff;
+}
+.footer-about-logo::first-letter {
+  color: #00e5cc;
+}
+.footer-about-p {
+  font-size: 1.6rem;
+  margin: 2rem 0;
+}
+.social_media_icon {
+  margin-bottom: 2.5rem;
+}
+.social_media_icon i {
+  margin: 0 0.8rem;
+  font-size: 3rem;
+  color: #9090a7;
+  transition: all 0.8s ease;
+}
+.social_media_icon i:hover {
+  color: #00e5cc;
+  cursor: pointer;
+}
+.footer_info_header {
+  color: #fff;
+  margin-bottom: 4rem;
+}
+.footer_infos li{
+  list-style-type: none;
+  margin: 1.3rem 0;
+}
+.footer_infos li a{
+  padding: 0;
+  font-size: 1.6rem;
+  color: #9090a7;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+.footer_infos li a:hover{
+  color: #00e5cc;
+  transform: scale(1.2);
 
 }
-.serv-card-footer-right p{
-    color: var(--secondary-color);
-    font-size: 1.4rem;
-    font-weight: 500;
-    font-style: normal;
+/* ---------------- */
+.copyright{
+  background-color: #000020;
+  color: #fff;
+  padding: 2.7rem 13.6rem;
+  display: flex;
+  justify-content: space-between;
+}
+.copyright p{
+  font-size: 1.6rem;
 }
