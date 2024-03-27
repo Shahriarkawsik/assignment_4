@@ -34,13 +34,14 @@ nav{
     /* background-color: var(--section-color); */
     background-color: rebeccapurple;
     height: 80vh;
+    padding-top: 3.5rem;
 }
 .navBar{
     align-items: center;
     background-color: #fff;
     border-radius: 1rem;
     justify-content: space-between;
-    margin: 3.5rem 13.5rem;
+    margin: 0 13.5rem;
     padding: 1.5rem 0;
 }
 ul li{
@@ -63,24 +64,26 @@ ul li a{
 .navBar__left:not(::first-letter){
     color: var(--primary-color);
 }
-.navBar__mdl li a{
-    color: var(--paragraph-color);
-    transition: all 0.4s ease-out;
-}
-.navBar__mdl li:hover a{
-    border-bottom: 3px solid #00E5CC ;
-}
-.navBar__right li a{
-    color: var(--primary-color);
-}
 .navBar__mdl,.navBar__right{
     font-size: 1.4rem;
     font-style: normal;
     font-weight: 500;
 }
+.navBar__mdl li a{
+    color: var(--paragraph-color);
+    transition: all 0.4s ease-out;
+}
+.navBar__mdl li:hover a{
+    color:  #00E5CC ;
+    font-size: 1.5rem;
+}
+.navBar__right li a{
+    color: var(--primary-color);
+}
+
 .navBar__right li a{
     color: #060640;
-    border-radius: 8px;
+    border-radius: 6px;
 }
 .navBar__right li:hover a{
     background-color: #060640;
