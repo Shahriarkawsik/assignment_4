@@ -1,92 +1,338 @@
 /* @import url(https://db.onlinewebfonts.com/c/5cae74f63bd48d24d5abdddb3af09a50?family=Airbnb+Cereal+App+Black); */
 @font-face {
-    font-family: 'airbnb_cereal_appblack';
-    src: url('airbnb_cereal_app_black-webfont.woff2') format('woff2'),
-         url('airbnb_cereal_app_black-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "airbnb_cereal_appblack";
+  src: url("airbnb_cereal_app_black-webfont.woff2") format("woff2"),
+    url("airbnb_cereal_app_black-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
 }
-html{
-    font-size: 62.5%;
+html {
+  font-size: 62.5%;
 }
-body{
-    font-family: "Airbnb Cereal App Black";
+body {
+  font-family: "Airbnb Cereal App Black";
 }
-:root{
-    --bottom-header-color:#000020;
-    --paragraph-color: #9090A7;
-    --primary-color:#060640;
-    --secondary-color:#00E5CC;
-    --section-color: #ECF9FF;
+:root {
+  --bottom-header-color: #000020;
+  --paragraph-color: #9090a7;
+  --primary-color: #060640;
+  --secondary-color: #00e5cc;
+  --section-color: #ecf9ff;
 }
-.dis-flex{
-    display: flex;
-    flex-wrap: wrap;
+.dis-flex {
+  display: flex;
+  /* flex-wrap: wrap; */
+}
+.dis-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+.button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-color);
+  border-radius: 6px;
+  color: #fff;
+  flex-shrink: 0;
+  font-size: 1.4rem;
+  font-weight: 500;
+  padding: 0 3.5rem 0 3.6rem;
+  cursor: pointer;
+}
+img{
+    object-fit: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+section {
+  padding: 11rem 13.5rem;
+}
+.section-header {
+  text-align: center;
+  font-size: 4.5rem;
+  font-style: normal;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+.section-header-sub {
+  text-align: center;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  color: var(--paragraph-color);
+}
+.custom-h1 {
+  color: var(--primary-color);
+  font-style: normal;
+  font-weight: 500;
+}
+.custom-p {
+  color: var(--paragraph-color);
+  font-style: normal;
+  font-weight: 400;
 }
 /* navBar design */
-nav{
-    /* background-color: var(--section-color); */
-    background-color: rebeccapurple;
-    height: 80vh;
-    padding-top: 3.5rem;
+nav {
+  background-color: var(--section-color);
+  padding: 3.5rem 13.5rem 0;
+  /* margin: 5rem 13.5rem 13rem; */
 }
-.navBar{
-    align-items: center;
-    background-color: #fff;
-    border-radius: 1rem;
+.navBar {
+  align-items: center;
+  background-color: #fff;
+  border-radius: 1rem;
+  justify-content: space-between;
+  margin-bottom: 13rem;
+  padding: 1.5rem 0;
+}
+ul li {
+  list-style-type: none;
+}
+ul li a {
+  margin: 0.5rem;
+  padding: 1rem 0.5rem;
+}
+.navBar__left {
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 700;
+  padding: 0 3.5rem;
+}
+.navBar__left::first-letter {
+  color: #00e5cc;
+}
+.navBar__left:not(::first-letter) {
+  color: var(--primary-color);
+}
+.navBar__mdl,
+.navBar__right {
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 500;
+}
+.navBar__mdl li a {
+  color: var(--paragraph-color);
+  transition: all 0.4s ease-out;
+}
+.navBar__mdl li:hover a {
+  color: #00e5cc;
+  font-size: 1.5rem;
+}
+.navBar__right li a {
+  color: var(--primary-color);
+}
+
+.navBar__right li a {
+  color: #060640;
+  border-radius: 6px;
+}
+.navBar__right li:hover a {
+  background-color: #060640;
+  color: #fff;
+  /* border-bottom: 3px solid #00E5CC ; */
+}
+/* ---------------- */
+.hero__left {
+  width: 50%;
+  margin-right: 4.7rem;
+}
+.hero__left h1 {
+  font-size: 5rem;
+  font-style: normal;
+  font-weight: 700;
+  color: #060640;
+}
+.hero__left__p {
+  margin: 3rem 0 3.5rem 0;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  color: var(--paragraph-color);
+}
+.hero__right img {
+  max-width: 100%;
+}
+.dis__flex-btn {
+  height: 6rem;
+}
+.dis__flex-btn i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  font-size: 2rem;
+  color: var(--secondary-color);
+  background-color: #fff;
+  margin: 0 3rem;
+}
+.group17 {
+  border-radius: 14px;
+  background-color: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(5px);
+  padding: 2.3rem 2.1rem;
+  margin-top: 7rem;
+}
+.group17__header {
+  margin-bottom: 1rem;
+}
+.group17__header__icon {
+  justify-content: space-between;
+}
+.group17__p__span {
+  font-weight: 500;
+}
+/* Work section */
+.work-header-sub {
+  margin: 1.2rem 0 7rem;
+}
+.work-cards {
+  background-color: #fff;
+  grid-template-columns: repeat(3, 1fr);
+}
+.work-card {
+  border-radius: 1.4rem;
+  box-shadow: 0rem 0rem 0.07rem 0;
+  padding: 3rem;
+}
+.work-card img {
+  width: 7rem;
+  height: 7rem;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  background: rgba(236, 249, 255, 0.8);
+}
+.work-card-heading {
+  margin: 5rem 0 1rem 0;
+  font-size: 2.4rem;
+}
+.work-card-p {
+  font-size: 1.6rem;
+}
+/* ------------------- */
+.about-left {
+  width: 40%;
+  margin-right: 4rem;
+}
+.about-left-heading {
+  font-weight: 700;
+  font-size: 4.5rem;
+}
+.about-left-p {
+  margin: 1.2rem 0 4rem;
+  font-size: 1.6rem;
+}
+
+.about-info-cards {
+  margin: 3rem 0 4rem 0;
+}
+.icon-box {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 1.2rem;
+  padding: 1.5rem;
+  background-color: rgba(236, 249, 255, 0.8);
+}
+.about-info-card-body {
+  margin-left: 2.5rem;
+}
+.about-info-card-p {
+  margin-top: 0.8rem;
+}
+.about-right {
+  width: 60%;
+  position: relative;
+}
+.about-right-img1 {
+  position: absolute;
+  bottom: 13.5rem;
+  right: 40%;
+  z-index: 3;
+}
+.icon-box-modify {
+  border-radius: 50%;
+}
+.about-right-img2 {
+  /* background-color: greenyellow; */
+  position: absolute;
+  bottom: -11rem;
+  right: 33%;
+  z-index: 2;
+  /* box-shadow: 0rem 0rem 0.07rem 0; */
+}
+.about-right-img3 {
+  position: absolute;
+  bottom: 0;
+  right: 2.1rem;
+}
+.about-right-img4 {
+  position: absolute;
+  top: -25rem;
+  right: 2.1rem;
+}
+/* --------------------------- */
+.service-section {
+  background-color: #ecf9ff;
+}
+.service-cards {
+  margin-top: 7.5rem;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+}
+.service-card-info {
+  min-width: 100%;
+  border-radius: 1.4rem;
+  border: 1px solid #fff;
+  /* background-color: #fff; */
+  padding: 1.6rem;
+  box-shadow: 0px 10px 70px 0px rgba(2, 2, 38, 0.06);
+}
+.serv-card-header {
+  color: #000;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  margin: 1.8rem 0;
+}
+.service-card-info img {
+  width: 100%;
+  border-radius: 8px;
+}
+.service-card-footer {
     justify-content: space-between;
-    margin: 0 13.5rem;
-    padding: 1.5rem 0;
+    align-items: center;
 }
-ul li{
-    list-style-type: none;
+.serv-card-footer-left{
+    height: 10vh;
+    align-items: center;
+    
 }
-ul li a{
-    margin: 0.5rem;
-    padding: 1rem 0.5rem;
+.serv-card-footer-left img {
+    background-color: #fff;
+    width: 4.7rem;
+    height: 4.7rem;
+    border-radius: 50%;
+    background: lightgray cover no-repeat;
+    object-fit: cover;
+    padding: 0.5rem;
+    margin: -8px;
+}
+.serv-card-footer-left p{
+    /* background-color: greenyellow; */
+    margin: 1.5rem;
 
 }
-.navBar__left{
-    font-size: 3rem;
-    font-style: normal;
-    font-weight: 700;
-    padding: 0 3.5rem;
-}
-.navBar__left::first-letter{
-    color: #00E5CC;
-}
-.navBar__left:not(::first-letter){
-    color: var(--primary-color);
-}
-.navBar__mdl,.navBar__right{
+.serv-card-footer-right p{
+    color: var(--secondary-color);
     font-size: 1.4rem;
-    font-style: normal;
     font-weight: 500;
-}
-.navBar__mdl li a{
-    color: var(--paragraph-color);
-    transition: all 0.4s ease-out;
-}
-.navBar__mdl li:hover a{
-    color:  #00E5CC ;
-    font-size: 1.5rem;
-}
-.navBar__right li a{
-    color: var(--primary-color);
-}
-
-.navBar__right li a{
-    color: #060640;
-    border-radius: 6px;
-}
-.navBar__right li:hover a{
-    background-color: #060640;
-    color: #fff;
-    /* border-bottom: 3px solid #00E5CC ; */
+    font-style: normal;
 }
